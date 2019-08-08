@@ -1,0 +1,80 @@
+body{
+	font-family: -apple-system, BlinkMacSystemFont,Segoe
+	UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+}
+ul{
+	padding: 0;
+}
+li{
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+	color: $d0021b;
+}
+.App {
+  margin: 1rem;
+  h1 {
+    color: #0e64d2;
+  }
+  h4 {
+    color: #263140;
+  }
+}
+/*
+ * NAV
+*/
+.nav{
+	display: flex;
+}
+.active{
+	font-weight: bold;
+}
+.nav li{
+	margin-right: 15px;
+}
+/*
+ * plot
+ */
+ .plot-container {
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	justify-content: flex-start;
+ }
+ //for potrait phones. les than 576px
+ .plot{
+ 	box-sizing: border-box;
+ 	width: 100%;
+ 	padding: 10px 0 0 10px;
+ }
+ .scatterplot{
+ 	background-color: rgba(204, 204, 204, .6);
+ 	padding: 10px 0 0 10px;
+ }
+ //landscape phones, 576px and up
+ @media(min-width: 576px){
+ 	.plot{
+ 		width: 50%;
+ 	}
+ }
+
+ //tablets, for devices of 768px and up
+ @media(min-width: 768px){
+ 	.plot{
+ 		width: 50%;
+ 	}
+ }
+
+ //large devices, 992px and up
+ @media(min-width: 992px){
+ .plot{
+ 	width: 33%;
+ }
+ }
+
+ //extra -large devices, 1200px and up
+ @media(min-width: 1200px){
+ 	.plot{
+ 		width: 33%
+ 	}
+ }
